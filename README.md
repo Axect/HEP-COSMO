@@ -1,7 +1,16 @@
 # HEP-COSMO Server Administrate
 
-## 1. Python
+## 1. Admin
+### - Mathematica
 
+The license file of Mathematica is in `/home/probe/.Mathematica`
+Thus if an user wants to use, then
+```bash
+sudo cp -r /home/probe/.Mathematica /home/[user]/
+```
+
+## 2. User
+### -Python
 If any user want to install python package, then should use virtualenv.
 
 ```bash
@@ -19,10 +28,3 @@ virtualenv -p python3 [envname]
 deactivate
 ```
 
-## 2. Mathematica
-
-The license file of Mathematica is in `/home/probe/.Mathematica`
-Thus if an user wants to use, then
-```bash
-sudo cp -r /home/probe/.Mathematica /home/[user]/
-```
