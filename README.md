@@ -10,7 +10,7 @@ sudo cp -r /home/probe/.Mathematica /home/[user]/
 ```
 
 ## 2. User
-### -Python
+### - Python
 If any user want to install python package, then should use virtualenv.
 
 ```bash
