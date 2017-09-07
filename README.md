@@ -21,11 +21,11 @@ virtualenv [envname]
 # If you want to use python3 then
 virtualenv -p python3 [envname]
 
-# Install Package
-pip install [package]
-
 # Activate
 . [envname]/bin/activate
+
+# Install Package
+pip install [package]
 
 # Deactivate
 deactivate
