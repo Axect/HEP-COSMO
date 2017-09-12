@@ -9,6 +9,13 @@ Thus if an user wants to use, then
 sudo cp -r /home/probe/.Mathematica /home/[user]/
 ```
 
+### - Fail2Ban
+
+Administer can unban ip
+```bash
+fail2ban-client set sshd unbanip [ip Adress]
+```
+
 ## 2. User
 ### - Python
 If any user want to install python package, then should use virtualenv.
