@@ -54,14 +54,18 @@ ProxyCommand ssh -W 192.168.0.2:22 [User_Name_2]@nexus.yonsei.ac.kr
 * `[User_Name]` is your user name in Hive
 * `[User_Name_2]` is your user name in nexus
 
+```sh
+ssh [User_Name]@[Host]
+```
+
 ### - SSH Port forwarding
 
 ```sh
-ssh -N -f -L localhost:[Port_Num]:localhost:[Port_Num] [User_Name]@[HostName]
+ssh -N -f -L localhost:[Port_Num]:localhost:[Port_Num] [User_Name]@[Host]
 ```
 
 * `[Port_Num]` is port number which you want to use. (e.g. 8123)
-* `[HostName]` is host name of server (e.g. `nexus.yonsei.ac.kr` or `Hive`)
+* `[Host]` is host name of server (e.g. `nexus.yonsei.ac.kr` or `Hive`)
 * `[User_Name]` is your user name of server
 
 ### - Tensorflow (GPU Version)
