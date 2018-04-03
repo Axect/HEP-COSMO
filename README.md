@@ -46,11 +46,12 @@ deactivate
 
 ```config
 Host Hive
-HostName 192.168.0.3
+HostName [IP_NUM]
 User [User_Name]
-ProxyCommand ssh -W 192.168.0.2:22 [User_Name_2]@nexus.yonsei.ac.kr
+ProxyCommand ssh -W [IP_NUM]:22 [User_Name_2]@nexus.yonsei.ac.kr
 ```
 
+* `[IP_NUM]` is internal ip number. Now (2018/4/3: Hive is located at **192.168.0.3**)
 * `[User_Name]` is your user name in Hive
 * `[User_Name_2]` is your user name in nexus
 
