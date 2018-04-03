@@ -46,7 +46,7 @@ deactivate
 
 ```config
 Host Hive
-HostName 192.168.0.2
+HostName 192.168.0.3
 User [User_Name]
 ProxyCommand ssh -W 192.168.0.2:22 [User_Name_2]@nexus.yonsei.ac.kr
 ```
@@ -55,7 +55,7 @@ ProxyCommand ssh -W 192.168.0.2:22 [User_Name_2]@nexus.yonsei.ac.kr
 * `[User_Name_2]` is your user name in nexus
 
 ```sh
-ssh [User_Name]@[Host]
+ssh [Host]
 ```
 
 ### - SSH Port forwarding
@@ -71,8 +71,9 @@ ssh -N -f -L localhost:[Port_Num]:localhost:[Port_Num] [User_Name]@[Host]
 ### - Tensorflow (GPU Version)
 
 ```sh
-nvidia-docker run -it -p [Port_Num]:8888 tensorflow/tensorflow:latest-gpu
+nvidia-docker run --name [Container_Name] -it -p [Port_Num]:8888 tensorflow/tensorflow:latest-gpu
 ```
 
+* `[Container_Name]` will be name of your container. Write your preference.
 * `[Port_Num]` should be 4 digits (Do not use 8888)
 * If you finish your calculation, then plz shutdown jupyter server
