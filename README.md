@@ -51,7 +51,7 @@ User [User_Name]
 ProxyCommand ssh -W [IP_NUM]:22 [User_Name_2]@nexus.yonsei.ac.kr
 ```
 
-* `[IP_NUM]` is internal ip number. Now (2018/4/3: Hive is located at **192.168.0.3**)
+* `[IP_NUM]` is internal ip number. Now (2018/4/12: Hive is located at **192.168.0.2**)
 * `[User_Name]` is your user name in Hive
 * `[User_Name_2]` is your user name in nexus
 
