@@ -38,6 +38,20 @@ pip install [package]
 deactivate
 ```
 
+### - Print
+
+```bash
+# In your Nexus account (connected by ssh)
+lpr -o [options] [filename]
+```
+
+For example,
+
+```bash
+# Example - Print 1 - 10 pages with two sided long edge of blabla.pdf
+lpr -o page-ranges=1-10 -o sides=two-sided-long-edge blabla.pdf
+```
+
 ### - SSH Proxy
 
 * Edit or make `~/.ssh/config`
