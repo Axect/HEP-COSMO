@@ -92,3 +92,13 @@ nvidia-docker run --name [Container_Name] -it -p [Port_Num]:8888 tensorflow/tens
 * `[Container_Name]` will be name of your container. Write your preference.
 * `[Port_Num]` should be 4 digits (Do not use 8888)
 * If you finish your calculation, then plz shutdown jupyter server
+
+### - R Server
+
+```sh
+# In your Laptop or Desktop
+# You should make .ssh/config file (I wrote it above)
+ssh -N -f -L localhost:8787:localhost:8787 [Your_Hive_Account]@Hive
+```
+
+Then connect [R Server](localhost:8787) in your browser. And sign in your hive accounts. Finish!
