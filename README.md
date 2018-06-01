@@ -102,3 +102,10 @@ ssh -N -f -L localhost:8787:localhost:8787 [Your_Hive_Account]@Hive
 ```
 
 Then connect [R Server](localhost:8787) in your browser. And sign in your hive accounts. Finish!
+
+## Port List
+
+* dkang: 7570 ~ 7579
+* ban94gy: 3270 ~ 3279
+* axect: 8400 ~ 8409
+* dycheong: 5340 ~ 5349
